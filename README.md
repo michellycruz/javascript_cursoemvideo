@@ -1,7 +1,7 @@
 # javascript
  Curso de JavaScript do CursoemVideo
 
-<h1>Esses são os meus exercícios de JavaScript</h1>
+<h1>Exercícios de JavaScript</h1>
 
 <ul>
     <li>
