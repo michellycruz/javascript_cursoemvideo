@@ -9,6 +9,10 @@ let valores = [8, 1, 7, 4, 2, 9]
 //console.log(valores[4])
 //console.log(valores[5])
 
-for(let posicao = 0 ; posicao < valores.length ; posicao++){
+//for(let posicao = 0 ; posicao < valores.length ; posicao++){
+//    console.log(`A posicao ${posicao} guarda o valor ${valores[posicao]}`)
+//}
+
+for(let posicao in valores){
     console.log(`A posicao ${posicao} guarda o valor ${valores[posicao]}`)
 }
