@@ -1,4 +1,4 @@
-let number = document.querySelector("input#inum")
+let num = document.querySelector("input#inum")
 let lista = document.querySelector("select#ilista")
 let resultado = document.querySelector("div#res")
 let valores = []
@@ -22,9 +22,14 @@ function inList(n, l){
 }
 
 function adicionar(){
-    if(isNumber(number.value) && !inList(number.value, valores)){
-        
+    if(isNumber(num.value) && !inList(num.value, valores)){
+        valores.push(Number(num.value))
+        let item = document.createElement('option')
+        item.text = `Valor ${num.value} adicionado.`
+        lista.appendChild(item)
     } else {
         alert("Resultado inválido ou o número já se encontra na lista")
     }
+    num.value = ''
+    num.focus()
 }
