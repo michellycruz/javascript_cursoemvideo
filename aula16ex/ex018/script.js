@@ -23,7 +23,7 @@ function inList(n, l){
 
 function adicionar(){
     if(isNumber(number.value) && !inList(number.value, valores)){
-
+        
     } else {
         alert("Resultado inválido ou o número já se encontra na lista")
     }
