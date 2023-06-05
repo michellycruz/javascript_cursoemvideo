@@ -4,7 +4,9 @@ let resultado = document.querySelector("div#res")
 let valores = []
 
 
-
+function isNumber(n){
+    
+}
 
 
 function adicionar(){
