@@ -12,15 +12,19 @@ function isNumber(n){
     }
 }
 
-function inList(n){
 
+function inList(n, l){
+    if(l.indexOf(Number(n)) != -1){
+        return true
+    } else {
+        return false
+    }
 }
 
-
 function adicionar(){
-    if(isNumber(number.value) && !inList(number.value)){
+    if(isNumber(number.value) && !inList(number.value, valores)){
 
-    } else{
+    } else {
         alert("Resultado inválido ou o número já se encontra na lista")
     }
 }
