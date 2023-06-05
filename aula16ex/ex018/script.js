@@ -1,6 +1,6 @@
 let num = document.querySelector("input#inum")
 let lista = document.querySelector("select#ilista")
-let resultado = document.querySelector("div#res")
+let res = document.querySelector("div#res")
 let valores = []
 
 
@@ -32,4 +32,15 @@ function adicionar(){
     }
     num.value = ''
     num.focus()
+}
+
+function finalizar(){
+    if(valores == 0){
+        alert("Adicione valores antes de finalizar")
+    } else {
+        let tot = valores.length
+
+        res.innerHtml = ''
+        res.innerHTML += `<p> Ao todo temos ${tot} números cadastrados.<p>`
+    }
 }
